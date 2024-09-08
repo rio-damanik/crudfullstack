@@ -1,0 +1,27 @@
+GET http://localhost:3300/users
+
+###
+GET http://localhost:3300/users/1
+
+###
+POST http://localhost:3300/users
+Content-Type: application/json
+
+{
+    "name": "jhon dhou",
+    "email": "jhoudou@gmail.com",
+    "gender": "male"
+}
+
+###
+PATCH http://localhost:3300/users/1
+Content-Type: application/json
+
+{
+    "name": "jandidw",
+    "email": "jandidw@gmail.com",
+    "gender": "male"
+}
+
+###
+delete http://localhost:3300/users/5
